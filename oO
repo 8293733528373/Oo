@@ -9,7 +9,7 @@ local whitelist = {
     ["EternaIKing_ofc"] = true,
     ["OfEternal_queen"] = true,
     ["OfEternal_king"] = true,
-    ["User6"] = true,
+    ["miguelcrazy41"] = true,
     ["User7"] = true,
     ["User8"] = true,
     ["User9"] = true,
@@ -70,7 +70,7 @@ end)
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/MlFrvWM/BBLT81/main/BL81827TC", true))()
 
 local window = library:AddWindow("Sad | Farming", {
-    main_color = Color3.fromRGB(138, 0, 0),
+    main_color = Color3.fromRGB(0, 0, 0),
     min_size = Vector2.new(600, 600),
     can_resize = false
 })
@@ -941,24 +941,9 @@ local infoTab = window:AddTab("Info")
 infoTab:Show()
 infoTab:AddLabel("Made by Sad").TextSize = 20
 infoTab:AddLabel("").TextSize = 20
-infoTab:AddButton("Copy Invite", function()
-    local link = "https://discord.gg/9eFf93Kg8D"
-    if setclipboard then
-        setclipboard(link)
-        game.StarterGui:SetCore("SendNotification", {
-            Title = "Link Copied!";
-            Text = "You can continue to Discord now.";
-            Duration = 3;
-        })
-    else
-        game.StarterGui:SetCore("SendNotification", {
-            Title = "Error!";
-            Text = "Not Supported.";
-            Duration = 3;
-        })
-    end
-end)
+
 infoTab:AddLabel("")
+
 local wLabel = infoTab:AddLabel("VERSION//2.0.0")
 wLabel.TextSize = 40
 wLabel.Font = Enum.Font.Arcade
